@@ -1,25 +1,15 @@
 <!doctype html>
 <html lang="en">
  <head>
-  <meta charset="UTF-8">
-  <meta name="Generator" content="EditPlus®">
-  <meta name="Author" content="">
-  <meta name="Keywords" content="">
-  <meta name="Description" content="">
-  <title>Yearn</title>
-	
+  <title>Yearn</title>	
   <style>
 	*{padding:0;margin:0}
 	html{overflow:hidden}
   </style>
  </head>
- <body>
-  
-	
+ <body> 
 	<canvas id="canvas" style="background:#111"></canvas>
-
-	<script type="text/javascript">
-		
+	<script type="text/javascript">		
 		window.onload = function(){
 			//获取画布对象
 			var canvas = document.getElementById("canvas");
@@ -40,8 +30,7 @@
 			//给每一个文字初始化一个起始点的位置
 			for(var i=0;i<colunms;i++){
 				drops.push(0);
-			}
-
+			};
 			//运动的文字
 			var str ="javascript html5 canvas";
 			//4:fillText(str,x,y);原理就是去更改y的坐标位置
@@ -66,20 +55,15 @@
 					drops[i]++;
 				}
 			};
-
 			function randColor(){
 				var r = Math.floor(Math.random() * 256);
 				var g = Math.floor(Math.random() * 256);
 				var b = Math.floor(Math.random() * 256);
 				return "rgb("+r+","+g+","+b+")";
-			}
-
+			};
 			draw();
 			setInterval(draw,30);
 		};
-
-	</script>
-	
-	
- </body>
+	</script>	
+</body>
 </html>
